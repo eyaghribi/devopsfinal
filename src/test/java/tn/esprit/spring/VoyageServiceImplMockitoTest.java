@@ -16,7 +16,7 @@ import java.util.*;
 
 import static org.junit.Assert.assertNotNull;
 import static tn.esprit.spring.entities.Ville.RADES;
-import static tn.esprit.spring.entities.Ville.sfax;
+import static tn.esprit.spring.entities.Ville.SOUSSE;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
@@ -29,7 +29,7 @@ public class VoyageServiceImplMockitoTest {
     @Test
     public void testAddCategorieProduit() {
         //given
-        Voyage s = new Voyage(10L,RADES,sfax,10.0,11.0);
+        Voyage s = new Voyage(10L,RADES,SOUSSE,10.0,11.0);
 
         //when
         Mockito.when(this.cp.save(Mockito.any())).thenReturn(s);
