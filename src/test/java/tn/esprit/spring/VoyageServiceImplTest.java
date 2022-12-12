@@ -9,8 +9,8 @@ import tn.esprit.spring.entities.Voyage;
 import tn.esprit.spring.services.IVoyageService;
 
 import static org.junit.Assert.assertNotNull;
-import static tn.esprit.spring.entities.Ville.RADES;
-import static tn.esprit.spring.entities.Ville.sfax;
+import  tn.esprit.spring.entities.Ville.RADES;
+import  tn.esprit.spring.entities.Ville.sfax;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
