@@ -10,17 +10,7 @@ pipeline{
         stages{
 
 
-                           stage('Test unitaires + mock') {
-                              steps {
-                               script {
-                                sh 'echo "Test is processing ...."'
-                                sh 'mvn clean test'
-                               }
-
-                              }
-
-                            }
-
+                           
               
 		stage("build jar") {
             steps {
@@ -47,6 +37,16 @@ pipeline{
                 }
             }
         }
+stage('Test unitaires + mock') {
+                              steps {
+                               script {
+                                sh 'echo "Test is processing ...."'
+                                sh 'mvn clean test'
+                               }
+
+                              }
+
+                            }
 
 	 stage('sonnarqube(qualite de code'){
                   steps{
