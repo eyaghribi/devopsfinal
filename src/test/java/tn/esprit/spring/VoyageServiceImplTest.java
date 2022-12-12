@@ -1,4 +1,4 @@
-/*package tn.esprit.spring;
+package tn.esprit.spring;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -9,8 +9,7 @@ import tn.esprit.spring.entities.Voyage;
 import tn.esprit.spring.services.IVoyageService;
 
 import static org.junit.Assert.assertNotNull;
-import  tn.esprit.spring.entities.Ville.RADES;
-import  tn.esprit.spring.entities.Ville.sfax;
+import  tn.esprit.spring.entities.Ville;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
