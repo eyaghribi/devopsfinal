@@ -37,7 +37,7 @@ pipeline{
                 }
             }
         }
-stage('Test unitaires + mock') {
+/*stage('Test unitaires + mock') {
                               steps {
                                script {
                                 sh 'echo "Test is processing ...."'
@@ -46,7 +46,7 @@ stage('Test unitaires + mock') {
 
                               }
 
-                            }
+                            }*/
 
 	 stage('sonnarqube(qualite de code'){
                   steps{
