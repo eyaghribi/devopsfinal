@@ -13,7 +13,7 @@ services:
      
   spring-boot:
     image: eyaghribi/projetdev
-    container_name: spring
+    container_name: spring2
     ports:
       - 8089:8089
     depends_on:
