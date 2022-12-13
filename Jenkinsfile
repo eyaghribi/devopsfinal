@@ -8,9 +8,7 @@ pipeline{
 
 
         stages{
-
-
-                   stage('sonnarqube(qualite de code'){
+ stage('sonnarqube(qualite de code'){
                   steps{
                       script{
 			      withSonarQubeEnv('sonar') {
@@ -26,6 +24,9 @@ pipeline{
 
                  	}
                	 }
+              }
+
+                  
               
 		stage("build jar") {
             steps {
