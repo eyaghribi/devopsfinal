@@ -10,13 +10,11 @@ pipeline{
         stages{
 
 
-                 stage(" Sonarqube") {
+                  stage("Sonar") {
             steps {
-                script {
-                    sh "mvn -f'pom.xml' sonar:sonar -Dsonar.login=admin -Dsonar.password=sonar"
-                }
+                sh 'mvn sonar:sonar -Dsonar.login="admin" -Dsonar.password="sonarqube" '
             }
-        }      
+        }
               
 		stage("build jar") {
             steps {
