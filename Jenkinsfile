@@ -51,10 +51,12 @@ pipeline{
                 }
             
         }
-		 stage("Sonar") {
-            steps {
-                sh 'mvn sonar:sonar -Dsonar.login="admin" -Dsonar.password="sonar" '
+		 stage('Sonar'){
+            steps{
+                echo 'Sonar static test ...';
+                sh 'mvn sonar:sonar -Dsonar.login=admin -Dsonar.password=sonar';
             }
+        }
         }
 
 	
