@@ -2,7 +2,7 @@ version: '3'
 services:
   database:
     image: mysql
-    container_name: mysqlnd
+    container_name: mysq2
     environment:
       MYSQL_ROOT_PASSWORD: pass
       MYSQL_DATABASE: examv2thouraya   
